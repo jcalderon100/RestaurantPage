@@ -17,12 +17,15 @@ body{
 .container{
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 10px;
 
 }
 
 .header{
     display: flex;
     position: relative;
+    
+    
 }
 
 .menu{
@@ -37,9 +40,9 @@ body{
 }
 
 .logo{
-    color: #303030;
-    font-size: 25px;
-    font-weight: 800;
+    width: 150px 0 0;
+    align-content: center;
+    justify-content: center;
 
 }
 
@@ -62,11 +65,11 @@ body{
 }
 
 #menu {
-    display: none;
+    display: none ;
 }
 
 .menu-icono{
-    width: 25px;
+    width: 50px;
 
 }
 
@@ -108,7 +111,6 @@ body{
     font-weight: 600px;
     color: #303030;
     margin-bottom: 25px;
-    text-transform: capitalize;
 }
 
 .header-txt p{
@@ -296,10 +298,12 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 80px;
 }
 
 .contact-left{
     flex-basis: 50%;
+    
 }
 
 .contact-right{
@@ -315,6 +319,22 @@ body{
     margin-right: 15px;
     font-size: 25px;
 }
+
+.contact-left a{
+    text-decoration: none;
+    list-style: none;
+    color: #303030;
+}
+
+.contact-left a i{
+    color: #EE9003;
+    margin-right: 15px;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
 .social-icons{
     margin-top: 30px;
 }
@@ -323,11 +343,18 @@ body{
     text-decoration: none;
     font-size: 30px;
     margin-right: 50px;
-    color: #EE9003;
+    
     display: inline-block;
 }
 
-.social-icons a:hover{
+.social-icons a i{
+    font-size: 40px;
+    color: #545454;
+}
+
+
+
+.social-icons a i:hover{
     color: #EE9003;
     transform: translateY(-5px);
 }
@@ -402,6 +429,14 @@ hr{
     }
     .menu label {
         display: initial;
+    }
+    .logo img{
+        width: fit-content;
+    }
+
+    .menu.container{
+        margin-left: 100px;
+        
     }
 
     .menu .navbar{
@@ -543,13 +578,35 @@ hr{
         display: block;
     }
 
+    .sub-title {
+        text-align: center;
+    }
+
     .contact-left{
         padding: 30px;
+    }
+
+    .contact-right{
+        padding: 30px;
+        
+    }
+
+    .contact-right iframe {
+        width: 100%;
     }
 
     .social-icons{
         display: flex;
         justify-content: center;
+    }
+
+    .social-icons a{
+        align-items: center;
+        margin: 0 50px; 
+    }
+
+    .social-icons a i{
+        font-size: 40px;
     }
 
     .footer{
