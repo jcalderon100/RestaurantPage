@@ -56,7 +56,8 @@ body{
     color: #303030;
     font-weight: 600;
     cursor: pointer;
-    z-index: 10;
+    z-index: 1;
+    display: block;
 
 }
 
@@ -276,9 +277,92 @@ body{
     border-radius: 15px;
 }
 
+
+/*CONTACT*/
+
+.title {
+    font-size: 45px;
+    color: #303030;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sub-title{
+    padding: 0;
+}
+
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-left{
+    flex-basis: 50%;
+}
+
+.contact-right{
+    flex-basis: 50%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #EE9003;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 50px;
+    color: #EE9003;
+    display: inline-block;
+}
+
+.social-icons a:hover{
+    color: #EE9003;
+    transform: translateY(-5px);
+}
+
+.btn.btn2{
+    display: inline-block;
+    background: #b50400;
+
+}
+
+.contact-right{
+    width: 100%;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: #EE9003;
+    font-weight: 400;
+    margin-top: 20px;
+    
+}
+
+.copyright i{
+    color: #FFF;
+}
+
+/*
+
 hr{
     border: 1px solid #EEE;
 }
+
+
 
 .footer {
     padding: 100px 0;
@@ -306,6 +390,10 @@ hr{
     margin-bottom: 10px;
     color: #545454;
 }
+
+*/
+
+/* MEDIA QUERYS*/
 
 @media(max-width: 991px){
 
@@ -420,6 +508,7 @@ hr{
         line-height: 50px;
         margin-bottom: 10px;
     }
+
     .nosotros-txt p{
         margin-bottom: 20px;
 
@@ -448,6 +537,19 @@ hr{
 
     .product p{
         padding: 30px;
+    }
+
+    .row{
+        display: block;
+    }
+
+    .contact-left{
+        padding: 30px;
+    }
+
+    .social-icons{
+        display: flex;
+        justify-content: center;
     }
 
     .footer{
