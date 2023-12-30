@@ -6,6 +6,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    scroll-behavior: smooth;
 }
 
 
@@ -45,6 +46,8 @@ body{
 .menu .navbar ul li{
     position: relative;
     float: left;
+    display: block;
+    cursor: pointer;
 }
 
 .menu .navbar ul li a{
@@ -52,6 +55,8 @@ body{
     padding: 20px;
     color: #303030;
     font-weight: 600;
+    cursor: pointer;
+    z-index: 10;
 
 }
 
