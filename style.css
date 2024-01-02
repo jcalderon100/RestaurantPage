@@ -14,6 +14,9 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+/*Boton flotante de Whatsapp*/
+
+
 .float{
 	position:fixed;
 	width:60px;
@@ -303,6 +306,41 @@ body{
     color: #fff;
     border-radius: 15px;
 }
+
+/*tab-links*/
+
+.line{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 98px;
+    height: 5px;
+    background-color: #ff004f;
+}
+
+.tab-titles { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: auto;
+}
+
+.tab-links{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+@keyframes moving {
+    from{transform: translateX(50px);opacity: 0;}
+    to{transform: translateX(0px);opacity: 1;}
+}
+
+
+
 
 
 /*CONTACT*/
